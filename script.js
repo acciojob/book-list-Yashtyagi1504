@@ -33,8 +33,9 @@ function addBook(e){
 
 	function deleteBook(e){
 		let id = e.target.id.slice(6);
+		// console.log(id);
 		rows.forEach(row =>{
-			if(row.id.slice(3) == id-1){
+			if(row.id.slice(3) == id){
 				row.remove();
 			}
 			
